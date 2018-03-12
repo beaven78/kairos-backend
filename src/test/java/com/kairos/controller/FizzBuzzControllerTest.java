@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Basic Integration test to prove validity of endpoint.
  *
- *
+ * @author Stephen Foster
  */
 @RunWith(SpringRunner.class)
 @WebMvcTest(FizzBuzzController.class)
