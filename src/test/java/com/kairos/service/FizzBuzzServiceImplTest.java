@@ -25,12 +25,12 @@ public class FizzBuzzServiceImplTest {
 
     @Test
     public void itShouldReturnBuzzWhenTheGivenNumberIsAMultipleOf5() {
-        assertEquals("Buzz", fizzBuzzService.processFizzBuzz(5));
+        assertEquals(FizzBuzzService.BUZZ, fizzBuzzService.processFizzBuzz(5));
     }
 
     @Test
     public void itShouldReturnFizzBuzzWhenTheGivenNumberIsAMultipleOf3And5() {
-        assertEquals("FizzBuzz", fizzBuzzService.processFizzBuzz(15));
+        assertEquals(FizzBuzzService.FIZZ_BUZZ, fizzBuzzService.processFizzBuzz(15));
     }
 
     @Test
@@ -40,7 +40,7 @@ public class FizzBuzzServiceImplTest {
 
     @Test
     public void itShouldReturnFizzWhenTheGivenNumberIsAMultipleOf3() {
-        assertEquals("Fizz", fizzBuzzService.processFizzBuzz(3));
+        assertEquals(FizzBuzzService.FIZZ, fizzBuzzService.processFizzBuzz(3));
     }
 
     @Autowired
